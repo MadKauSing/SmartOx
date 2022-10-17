@@ -4,3 +4,5 @@ torch
 numpy
 pandas
 matplotlib
+spleeter
+pydub
