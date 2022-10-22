@@ -11,7 +11,7 @@ import time
 print(os.getcwd())
 
 moozyc_path='./content/MyDrive/moozyc/'
-genre_list=['indian_indie']
+genre_list=os.listdir(moozyc_path)
 #genre_list
 
 #['indian_indie','hindustani_classical','classic_bollywood','carnatic','desi_pop','tamil_pop','punjabi_hip_hop','ghazal','sufi','bhojpuri_pop']
@@ -29,7 +29,7 @@ for genre in genre_list:
 #creating pandas dataframe
 song_df=pd.DataFrame(data,columns=['file_path','song','genre'])
 
-#os.system('rm -rf ./content/spectrograms6sec')
+os.system('rm -rf ./content/spectrograms6sec')
 
 os.mkdir('./content/spectrograms6sec')
 for genre in genre_list:
@@ -44,12 +44,15 @@ def save_spectrogram(block,sr,genre,song_name,counter):
   song_name=song_name.replace('.mp3','')
   file_name=f'./content/spectrograms6sec/{genre}/'+song_name+str(counter)+'.png'
   plt.savefig(file_name)
+  plt.close()
+
+
 
 
 def preprocess(file_name,song_name,genre):
   # First load the file
   audio, sr = librosa.load(file_name)
-  filename = file_name.replace(".mp3",".wav")
+
 
   # Get number of samples for 6 seconds; replace 2 by any number
   buffer = 6 * sr
@@ -58,20 +61,21 @@ def preprocess(file_name,song_name,genre):
   samples_wrote = 0
   counter = 1
 
-  while samples_wrote < samples_total:
-      
-      #check if the buffer is not exceeding total samples 
-      if buffer > (samples_total - samples_wrote):
-          buffer = samples_total - samples_wrote
+  while samples_wrote < samples_total: 
+    #check if the buffer is not exceeding total samples 
+    if buffer > (samples_total - samples_wrote):
+        buffer = samples_total - samples_wrote
 
-      block = audio[samples_wrote : (samples_wrote + buffer)]
-      out_filename = "split_" + str(counter) + "_" + filename
+    block = audio[samples_wrote : (samples_wrote + buffer)]
+    # Write 2 second segment
+    save_spectrogram(block,sr,genre,song_name,counter)
+    # sf.write('1.wav', block, sr, 'PCM_24')
+    counter += 1
+    samples_wrote += buffer
+  
+  
 
-      # Write 2 second segment
-      save_spectrogram(block,sr,genre,song_name,counter)
-      # sf.write('1.wav', block, sr, 'PCM_24')
-      counter += 1
-      samples_wrote += buffer
+    
       
 
 for index,row in song_df.iterrows():
