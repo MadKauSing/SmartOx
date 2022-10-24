@@ -29,11 +29,11 @@ for genre in genre_list:
 #creating pandas dataframe
 song_df=pd.DataFrame(data,columns=['file_path','song','genre'])
 
-os.system('rm -rf ./content/spectrograms6sec')
+#os.system('rm -rf ./content/spectrograms6sec')
 
-os.mkdir('./content/spectrograms6sec')
-for genre in genre_list:
-  os.mkdir(f'./content/spectrograms6sec/{genre}')
+#os.mkdir('./content/spectrograms6sec')
+#for genre in genre_list:
+  #os.mkdir(f'./content/spectrograms6sec/{genre}')
 
 def save_spectrogram(block,sr,genre,song_name,counter):
   matplotlib.use('Agg')
@@ -51,36 +51,39 @@ def save_spectrogram(block,sr,genre,song_name,counter):
 
 def preprocess(file_name,song_name,genre):
   # First load the file
-  audio, sr = librosa.load(file_name)
+  try:
+    audio, sr = librosa.load(file_name)
 
 
-  # Get number of samples for 6 seconds; replace 2 by any number
-  buffer = 6 * sr
+    # Get number of samples for 6 seconds; replace 2 by any number
+    buffer = 6 * sr
 
-  samples_total = len(audio)
-  samples_wrote = 0
-  counter = 1
+    samples_total = len(audio)
+    samples_wrote = 0
+    counter = 1
 
-  while samples_wrote < samples_total: 
-    #check if the buffer is not exceeding total samples 
-    if buffer > (samples_total - samples_wrote):
-        buffer = samples_total - samples_wrote
+    while samples_wrote < samples_total: 
+      #check if the buffer is not exceeding total samples 
+      if buffer > (samples_total - samples_wrote):
+          buffer = samples_total - samples_wrote
 
-    block = audio[samples_wrote : (samples_wrote + buffer)]
-    # Write 2 second segment
-    save_spectrogram(block,sr,genre,song_name,counter)
-    # sf.write('1.wav', block, sr, 'PCM_24')
-    counter += 1
-    samples_wrote += buffer
-  
+      block = audio[samples_wrote : (samples_wrote + buffer)]
+      # Write 2 second segment
+      save_spectrogram(block,sr,genre,song_name,counter)
+      # sf.write('1.wav', block, sr, 'PCM_24')
+      counter += 1
+      samples_wrote += buffer
+  except:
+    pass
   
 
     
       
 
 for index,row in song_df.iterrows():
-  start=time.time()
+  if index<=330:
+    start=time.time()
 
-  preprocess(row["file_path"],row["song"],row["genre"])
-  end=time.time()
-  print(f"{row['song']} done",end-start,index)
+    preprocess(row["file_path"],row["song"],row["genre"])
+    end=time.time()
+    print(f"{row['song']} done",end-start,index)
