@@ -54,11 +54,5 @@ def smartox():
             st.markdown(f'{genre_pred}')
 
 
-    
-    
-    
-    
-
-
 smartox()
 
