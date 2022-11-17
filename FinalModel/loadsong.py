@@ -8,9 +8,6 @@ import numpy as np
 import librosa.display
 import time
 
-import os
-
-
 
 
 def save_spectrogram(block,sr,genre,song_name,counter):
