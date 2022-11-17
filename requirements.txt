@@ -1,8 +1,0 @@
-librosa
-glob
-torch
-numpy
-pandas
-matplotlib
-spleeter
-pydub
