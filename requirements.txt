@@ -1,6 +1,8 @@
 librosa
 glob
-torch
+tensorflow
+streamlit
+audio_recorder_streamlit
 numpy
 pandas
 matplotlib
