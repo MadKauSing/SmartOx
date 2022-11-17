@@ -8,6 +8,11 @@ import numpy as np
 import librosa.display
 import time
 
+import os
+
+
+
+
 def save_spectrogram(block,sr,genre,song_name,counter):
   matplotlib.use('Agg')
   S = librosa.feature.melspectrogram(y=block, sr=sr, n_mels=128,fmax=8000)
@@ -39,3 +44,4 @@ def make_spectrograms(audio,sr,song_name):
 
         counter += 1
         samples_wrote += buffer
+
