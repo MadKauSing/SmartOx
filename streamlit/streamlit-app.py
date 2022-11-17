@@ -13,6 +13,7 @@ st.set_page_config(page_title="sMartOx")
 
 
 def smartox():
+    
     st.markdown('# **sMartOx**')
     st.markdown('### _Music Genre Classifier and Recommender_')
     st.markdown('Check out source code at '
