@@ -35,20 +35,23 @@ def smartox():
             f.write(audio_bytes)
         
         genre_pred,ttd=testSong.testsong('myfile.wav')
-        
-        data={
-            "Genres":[],
-            "Confidence":[]
-        }
-        for x,y in ttd:
-            data["Genres"].append(x)
-            data["Confidence"].append(y)
-        
 
-        df=pd.DataFrame(data)
-        st.table(df)
-        st.markdown('### Your classification is')
-        st.markdown(f'{genre_pred}')
+        if genre_pred==1 and ttd==1:
+            st.markdown("PLEASE RECORD A LONGER AUDIO FILE")
+        else:
+            data={
+                "Genres":[],
+                "Confidence":[]
+            }
+            for x,y in ttd:
+                data["Genres"].append(x)
+                data["Confidence"].append(y)
+            
+
+            df=pd.DataFrame(data)
+            st.table(df)
+            st.markdown('### Your classification is')
+            st.markdown(f'{genre_pred}')
 
 
     

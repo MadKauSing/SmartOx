@@ -125,36 +125,41 @@ def testsong(file_path):
     for genre in genre_list:
          os.mkdir(f'{dest_path}/{genre}')
     
+    error=0
+    try:
+        audio, sr = librosa.load(file_name)
+        make_spectrograms(audio,sr,song_name)
+
+        data_dir_test='testset'
+
+        #defining dataset dimensions
+        batch_size=64
+        image_height=100
+        image_width=200
+
+        #loading datasets
+
+        test_ds = tf.keras.utils.image_dataset_from_directory(
+        data_dir_test,
+        seed=123,
+        image_size=(image_height, image_width),
+        batch_size=batch_size,
+        shuffle="False"
+        )
+
+        test_ds_cnn = tf.keras.utils.image_dataset_from_directory(
+        data_dir_test,
+        seed=123,
+        image_size=(75, 150),
+        batch_size=batch_size,
+        shuffle="False"
+        )
+
+        genre_list=test_ds.class_names
+        yhat_genre,ttd=ensemble_models(genre_list,test_ds,test_ds_cnn)
+        return yhat_genre,ttd
+    except:
+        error=1
+        return error,error
     
-    audio, sr = librosa.load(file_name)
-    make_spectrograms(audio,sr,song_name)
-
-    data_dir_test='testset'
-
-    #defining dataset dimensions
-    batch_size=64
-    image_height=100
-    image_width=200
-
-    #loading datasets
-
-    test_ds = tf.keras.utils.image_dataset_from_directory(
-    data_dir_test,
-    seed=123,
-    image_size=(image_height, image_width),
-    batch_size=batch_size,
-    shuffle="False"
-    )
-
-    test_ds_cnn = tf.keras.utils.image_dataset_from_directory(
-    data_dir_test,
-    seed=123,
-    image_size=(75, 150),
-    batch_size=batch_size,
-    shuffle="False"
-    )
-
-    genre_list=test_ds.class_names
-    yhat_genre,ttd=ensemble_models(genre_list,test_ds,test_ds_cnn)
-    return yhat_genre,ttd
 
