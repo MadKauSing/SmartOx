@@ -5,6 +5,7 @@ from audio_recorder_streamlit import audio_recorder
 import librosa
 import testSong
 import pandas as pd
+import recommender
 
 
 import sys
@@ -49,9 +50,15 @@ def smartox():
             
 
             df=pd.DataFrame(data)
+            df = df.sort_values(by=['Confidence'],ignore_index=True,ascending=False)
             st.table(df)
             st.markdown('### Your classification is')
             st.markdown(f'{genre_pred}')
+
+            suggestions=recommender.get_recommendations('testset/classic_bollywood/myfile.wav1.png',genre_pred)
+            print(suggestions)
+            st.markdown('#### Recommendations')
+            st.table(suggestions)
 
 
 smartox()

@@ -20,9 +20,12 @@ def get_image_array(image):
 def get_song_name(img_name):
     return ''.join((x for x in img_name[:-4] if not x.isdigit()))
 
-def get_recommendations(song,yhat):
-    dest_path = "../content/new/spectrograms6secnew"
-    compared_image = get_image_array(song)
+def get_recommendations(song_path,yhat):
+    dest_path = "../content/spectrograms6secnew"
+
+    song_image = Image.open(song_path)
+
+    compared_image = get_image_array(song_image)
     similarity_images = []
     path = os.path.join(dest_path,yhat)
     
@@ -34,10 +37,9 @@ def get_recommendations(song,yhat):
         image_name = images.split('\\')[-1]
         song_name = get_song_name(image_name)
         
-        prev_song_name = song_name
         similarity_images.append([song_name,similarity])
         df = pd.DataFrame(similarity_images,columns=["Name","Score"])
         avgeraged_similarities = df.groupby('Name').mean('Score').reset_index()
-        suggestions = avgeraged_similarities.sort_values('Score',ascending=False).head(10)
+        suggestions = avgeraged_similarities.sort_values(by=['Score'],ascending=False).head(10).reset_index().drop('index',axis=1)
         # suggestions = df.sort_values('Score',ascending=False).head(10)
-        return suggestions
+    return suggestions
