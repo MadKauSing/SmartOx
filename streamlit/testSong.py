@@ -48,7 +48,7 @@ def make_spectrograms(audio,sr,song_name):
         samples_wrote += buffer
 
 
-def save_spectrogram(block,sr,genre,song_name,counter):
+def save_spectrogram(block,sr,genre:str,song_name:str,counter:int):
   matplotlib.use('Agg')
   S = librosa.feature.melspectrogram(y=block, sr=sr, n_mels=128,fmax=8000)
   plt.figure(figsize=(6, 3))
@@ -85,7 +85,7 @@ def ensemble_models(model_genres:list,model_input,model_input_cnn):
         confi_lis+=i
     confi_lis=confi_lis/(len(avgEnsemble))
     summation=sum(confi_lis)
-
+    #print(summation)
 
     text_to_display=[]
     for i in range(len(confi_lis)):

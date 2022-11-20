@@ -54,10 +54,11 @@ def smartox():
             st.table(df)
             st.markdown('### Your classification is')
             st.markdown(f'{genre_pred}')
-
+            
+            st.markdown('#### Recommendations')
             suggestions=recommender.get_recommendations('testset/classic_bollywood/myfile.wav1.png',genre_pred)
             print(suggestions)
-            st.markdown('#### Recommendations')
+            
             st.table(suggestions)
 
 
