@@ -1,33 +1,15 @@
-# streamlit_audio_recorder (Custom Component)
+# GuessFlat
 
-Implemented by [Stefan Rummer](https://www.linkedin.com/in/stefanrmmr/) - (work in progress)<br/>
-Based on [doppelgunner](https://github.com/doppelgunner/audio-react-recorder)'s [Audio-React-Recorder](https://www.npmjs.com/package/audio-react-recorder)<br/>
+## Project description
 
-![Screenshot 2022-05-16 at 16 58 36](https://user-images.githubusercontent.com/82606558/168626886-de128ffa-a3fe-422f-a748-395c29fa42f9.png)<br/>
+A machine learning project that combines the KNN, SVM and CNN models to create a music recommendation system from the moozyc dataset by madkausingh.
 
-## Features & Outlook
-- Managing access to your microphone via the browser's Media-API
-- Record, playback and revert audio-captures within the streamlit app
-- Download the final recording to your local system (WAV, 16bit, 44kHz)
-- **NEW:** Directly return audio recording-data to Python backend! (arrayBuffer)
+## Dataset
 
+The Moozyc dataset is a custom dataset made by our team by scraping songs using the spotify api and spotdl. The dataset contains music from various Indian genres like carnatic, sufi, ghazal, bollywood, punjabi hip hop and so on. The dataset includes details of a song such as the name, artist, genre and track id which is retrieved from the spotify api. The track ids unique to each song let us download the song directly from spotify using the spotdl cli tool.
 
-## Component Setup - step by step
-1. Copy the folder "st_audiorec" to the top level directory of your streamlit project
-2. Import "os", "streamlit as st" and "streamlit.components.v1 as components"
-```
-import os
-import streamlit as st
-import streamlit.components.v1 as components
-```
-3. Initialize path variables and declare the custom component using the given name
-```
-parent_dir = os.path.dirname(os.path.abspath(__file__))
-build_dir = os.path.join(parent_dir, "st_audiorec/frontend/build")
-st_audiorec = components.declare_component("st_audiorec", path=build_dir)
-```
-4. Create an instance of "streamlit-audio-recorder" and record client audio data! 🎈<br/>
+## This project was made by
 
-```
-st_audiorec()
-```
+- Ayush Singh
+- Ayushmaan Kaushik
+- Bhavini Madhuranath
