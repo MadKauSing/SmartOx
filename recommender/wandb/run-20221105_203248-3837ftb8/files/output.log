@@ -1,0 +1,273 @@
+Found 30000 files belonging to 10 classes.
+Using 24000 files for training.
+2022-11-05 20:33:16.789873: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2022-11-05 20:33:16.789917: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-11-05 20:33:16.789940: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (CoderCatA5Pop): /proc/driver/nvidia/version does not exist
+2022-11-05 20:33:16.791157: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Found 30000 files belonging to 10 classes.
+Using 6000 files for validation.
+['bhojpuri_pop', 'carnatic', 'classic_bollywood', 'desi_pop', 'ghazal', 'hindustani_classical', 'indian_indie', 'punjabi_hip_hop', 'sufi', 'tamil_pop']
+(64, 75, 150, 3)
+(64,)
+0.0 1.0
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling_1 (Rescaling)     (None, 75, 150, 3)        0
+ conv2d (Conv2D)             (None, 75, 150, 16)       448
+ max_pooling2d (MaxPooling2D  (None, 37, 75, 16)       0
+ )
+ conv2d_1 (Conv2D)           (None, 37, 75, 32)        4640
+ max_pooling2d_1 (MaxPooling  (None, 18, 37, 32)       0
+ 2D)
+ conv2d_2 (Conv2D)           (None, 18, 37, 64)        18496
+ max_pooling2d_2 (MaxPooling  (None, 9, 18, 64)        0
+ 2D)
+ flatten (Flatten)           (None, 10368)             0
+ dense (Dense)               (None, 128)               1327232
+ dense_1 (Dense)             (None, 10)                1290
+=================================================================
+Total params: 1,352,106
+Trainable params: 1,352,106
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+111/375 [=======>......................] - ETA: 1:05 - loss: 2.3174 - accuracy: 0.1740Epoch 1/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 97s 259ms/step - loss: 1.6914 - accuracy: 0.4049 - val_loss: 1.4797 - val_accuracy: 0.4763
+Epoch 2/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 100s 263ms/step - loss: 1.3675 - accuracy: 0.5246 - val_loss: 1.2720 - val_accuracy: 0.5523
+Epoch 3/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 91s 241ms/step - loss: 1.2271 - accuracy: 0.5696 - val_loss: 1.1766 - val_accuracy: 0.5902
+Epoch 4/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 87s 233ms/step - loss: 1.1381 - accuracy: 0.6064 - val_loss: 1.1379 - val_accuracy: 0.6040
+Epoch 5/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

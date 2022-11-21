@@ -1,0 +1,577 @@
+2022-11-05 20:49:17,317 INFO    StreamThr :80458 [internal.py:wandb_internal():91] W&B internal server running at pid: 80458, started at: 2022-11-05 20:49:17.317082
+2022-11-05 20:49:17,318 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: status
+2022-11-05 20:49:17,319 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: status
+2022-11-05 20:49:17,320 DEBUG   SenderThread:80458 [sender.py:send():303] send: header
+2022-11-05 20:49:17,320 INFO    WriterThread:80458 [datastore.py:open_for_write():75] open: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/run-218vf6e1.wandb
+2022-11-05 20:49:17,364 DEBUG   SenderThread:80458 [sender.py:send():303] send: run
+2022-11-05 20:49:18,160 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: check_version
+2022-11-05 20:49:18,164 INFO    SenderThread:80458 [dir_watcher.py:__init__():216] watching files in: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files
+2022-11-05 20:49:18,164 INFO    SenderThread:80458 [sender.py:_start_run_threads():931] run started: 218vf6e1 with start time 1667661557.314885
+2022-11-05 20:49:18,164 DEBUG   SenderThread:80458 [sender.py:send():303] send: summary
+2022-11-05 20:49:18,164 INFO    SenderThread:80458 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 20:49:18,164 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: check_version
+2022-11-05 20:49:18,609 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: run_start
+2022-11-05 20:49:18,611 DEBUG   HandlerThread:80458 [system_info.py:__init__():31] System info init
+2022-11-05 20:49:18,611 DEBUG   HandlerThread:80458 [system_info.py:__init__():46] System info init done
+2022-11-05 20:49:18,611 INFO    HandlerThread:80458 [system_monitor.py:start():150] Starting system monitor
+2022-11-05 20:49:18,611 INFO    SystemMonitor:80458 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-05 20:49:18,611 INFO    HandlerThread:80458 [system_monitor.py:probe():168] Collecting system info
+2022-11-05 20:49:18,611 INFO    SystemMonitor:80458 [interfaces.py:start():168] Started cpu
+2022-11-05 20:49:18,611 INFO    SystemMonitor:80458 [interfaces.py:start():168] Started disk
+2022-11-05 20:49:18,612 INFO    SystemMonitor:80458 [interfaces.py:start():168] Started memory
+2022-11-05 20:49:18,612 INFO    SystemMonitor:80458 [interfaces.py:start():168] Started network
+2022-11-05 20:49:18,615 DEBUG   HandlerThread:80458 [system_info.py:probe():195] Probing system
+2022-11-05 20:49:18,623 DEBUG   HandlerThread:80458 [system_info.py:_probe_git():180] Probing git
+2022-11-05 20:49:18,648 DEBUG   HandlerThread:80458 [system_info.py:_probe_git():188] Probing git done
+2022-11-05 20:49:18,648 DEBUG   HandlerThread:80458 [system_info.py:probe():241] Probing system done
+2022-11-05 20:49:18,648 DEBUG   HandlerThread:80458 [system_monitor.py:probe():177] {'os': 'Linux-6.0.3-76060003-generic-x86_64-with-debian-bookworm-sid', 'python': '3.7.13', 'heartbeatAt': '2022-11-05T15:19:18.616012', 'startedAt': '2022-11-05T15:19:17.306082', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/MadKauSing/GuessFlat.git', 'commit': 'a364c7cb3439ea260e9d9dd779f4a7e8f825131f'}, 'email': 'theayushsingh72@gmail.com', 'root': '/home/ayushsingh/Documents/GuessFlat', 'host': 'CoderCatA5Pop', 'username': 'ayushsingh', 'executable': '/home/ayushsingh/anaconda3/envs/ai_ml_nn/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3902.8185, 'min': 400.0, 'max': 4289.0}, 'cpu_freq_per_core': [{'current': 4013.195, 'min': 400.0, 'max': 4289.0}, {'current': 4044.221, 'min': 400.0, 'max': 4289.0}, {'current': 4095.594, 'min': 400.0, 'max': 4289.0}, {'current': 4044.435, 'min': 400.0, 'max': 4289.0}, {'current': 4076.992, 'min': 400.0, 'max': 4289.0}, {'current': 4044.188, 'min': 400.0, 'max': 4289.0}, {'current': 3186.514, 'min': 400.0, 'max': 4289.0}, {'current': 3179.619, 'min': 400.0, 'max': 4289.0}, {'current': 3918.89, 'min': 400.0, 'max': 4289.0}, {'current': 3320.823, 'min': 400.0, 'max': 4289.0}, {'current': 3982.184, 'min': 400.0, 'max': 4289.0}, {'current': 4090.202, 'min': 400.0, 'max': 4289.0}], 'disk': {'total': 460.01971435546875, 'used': 298.9975700378418}, 'memory': {'total': 14.465187072753906}}
+2022-11-05 20:49:18,648 INFO    HandlerThread:80458 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-05 20:49:18,648 INFO    HandlerThread:80458 [system_monitor.py:probe():181] Publishing system info
+2022-11-05 20:49:18,648 DEBUG   HandlerThread:80458 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-05 20:49:18,649 DEBUG   HandlerThread:80458 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-05 20:49:18,649 DEBUG   HandlerThread:80458 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2022-11-05 20:49:19,166 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/wandb-summary.json
+2022-11-05 20:49:19,167 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/requirements.txt
+2022-11-05 20:49:19,167 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/conda-environment.yaml
+2022-11-05 20:49:24,789 DEBUG   HandlerThread:80458 [system_info.py:_save_conda():86] Saving conda packages done
+2022-11-05 20:49:24,789 INFO    HandlerThread:80458 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-05 20:49:24,808 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:49:24,809 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:24,809 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:49:24,809 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:24,814 INFO    HandlerThread:80458 [system_monitor.py:finish():160] Stopping system monitor
+2022-11-05 20:49:24,815 DEBUG   SystemMonitor:80458 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-05 20:49:24,815 DEBUG   SystemMonitor:80458 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-11-05 20:49:24,815 DEBUG   SystemMonitor:80458 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-11-05 20:49:24,816 INFO    HandlerThread:80458 [interfaces.py:finish():173] Joined cpu
+2022-11-05 20:49:24,816 INFO    HandlerThread:80458 [interfaces.py:finish():173] Joined disk
+2022-11-05 20:49:24,816 INFO    HandlerThread:80458 [interfaces.py:finish():173] Joined memory
+2022-11-05 20:49:24,816 INFO    HandlerThread:80458 [interfaces.py:finish():173] Joined network
+2022-11-05 20:49:24,816 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:24,816 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:24,816 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:24,816 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:24,816 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:24,816 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:24,818 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:24,818 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:24,818 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:24,818 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:24,818 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:24,818 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:24,818 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:24,818 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:25,149 DEBUG   SenderThread:80458 [sender.py:send():303] send: telemetry
+2022-11-05 20:49:25,150 DEBUG   SenderThread:80458 [sender.py:send():303] send: files
+2022-11-05 20:49:25,151 INFO    SenderThread:80458 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-05 20:49:25,151 DEBUG   SenderThread:80458 [sender.py:send():303] send: stats
+2022-11-05 20:49:25,169 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/conda-environment.yaml
+2022-11-05 20:49:25,169 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:49:25,169 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/wandb-metadata.json
+2022-11-05 20:49:26,148 INFO    Thread-16 :80458 [upload_job.py:push():143] Uploaded file /tmp/tmp18w8ubmewandb/2p5nbogz-wandb-metadata.json
+2022-11-05 20:49:40,151 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:49:40,151 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:49:45,039 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:45,039 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:45,078 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:45,078 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:45,084 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:45,084 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:45,139 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:45,139 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:45,140 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:45,140 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:45,178 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:45,178 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:46,381 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:46,381 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:46,402 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:46,402 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:47,371 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:47,371 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:47,404 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:47,404 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:48,176 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/config.yaml
+2022-11-05 20:49:48,176 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:49:48,399 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:48,399 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:48,466 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:48,466 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:49,042 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:49,042 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:49,091 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:49,091 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:49,176 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:49:49,595 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:49,595 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:49,648 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:49,648 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:49,651 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:49,651 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:49,674 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:49,674 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:49,758 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:49,759 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:49,780 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:49,781 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:49,790 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:49,790 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:49,857 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:49,857 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:49,875 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:49:49,875 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:49:49,906 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:49:49,906 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:49:50,177 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:49:52,178 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:49:54,180 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:49:55,567 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:49:55,568 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:49:56,181 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:49:58,182 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:00,183 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:02,184 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:04,185 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:06,187 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:08,189 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:10,191 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:11,001 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:50:11,002 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:50:12,192 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:14,194 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:16,195 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:18,197 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:20,203 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:22,203 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:24,204 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:26,206 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:27,286 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:50:27,287 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:50:28,207 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:30,209 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:32,210 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:34,212 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:36,214 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:38,217 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:40,219 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:42,222 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:42,735 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:50:42,736 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:50:44,225 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:46,229 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:48,230 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:50,232 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:52,235 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:54,238 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:56,240 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:50:58,122 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:50:58,123 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:50:58,241 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:00,242 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:02,243 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:04,246 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:06,247 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:08,248 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:10,249 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:12,251 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:13,505 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:51:13,505 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:51:14,253 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:16,256 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:18,258 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:20,260 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:22,262 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:24,265 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:26,269 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:28,271 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:28,980 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:51:28,983 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:51:30,273 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:31,728 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:51:31,728 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:51:32,273 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:35,965 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:51:35,965 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:51:38,277 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:40,279 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:42,282 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:44,283 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:44,461 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:51:44,461 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:51:46,285 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:48,287 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:50,288 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:52,291 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:54,295 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:56,299 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:58,302 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:51:59,999 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:51:59,999 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:52:00,304 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:02,306 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:04,307 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:06,309 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:08,314 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:10,317 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:12,318 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:14,319 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:15,506 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:52:15,506 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:52:16,321 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:18,325 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:20,327 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:22,330 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:24,331 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:26,332 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:28,334 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:30,336 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:30,846 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:52:30,846 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:52:32,339 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:34,342 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:36,344 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:38,346 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:40,347 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:42,350 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:44,351 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:46,352 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:46,413 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:52:46,413 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:52:48,354 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:50,356 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:52,359 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:54,362 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:56,363 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:52:58,364 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:00,365 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:01,901 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:53:01,901 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:53:10,370 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:12,371 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:14,373 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:16,375 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:17,270 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:53:17,270 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:53:18,378 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:20,381 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:22,384 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:24,389 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:26,390 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:28,393 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:30,396 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:32,400 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:32,740 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:53:32,740 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:53:34,403 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:36,406 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:38,408 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:40,410 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:42,414 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:44,417 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:46,419 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:48,415 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:53:48,416 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:53:48,425 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:50,424 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:52,426 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:54,427 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:56,429 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:53:58,430 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:00,432 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:02,435 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:03,920 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:54:03,921 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:54:04,437 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:06,443 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:08,445 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:11,447 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:13,449 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:15,451 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:17,452 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:19,442 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:54:19,443 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:54:19,455 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:21,459 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:23,459 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:25,461 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:27,463 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:29,465 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:31,466 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:35,469 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:35,934 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:54:35,935 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:54:37,471 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:39,477 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:41,478 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:43,481 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:45,483 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:47,485 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:49,487 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:51,448 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:54:51,448 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:54:51,490 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:53,492 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:55,500 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:57,503 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:54:59,507 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:01,509 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:03,513 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:05,515 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:06,890 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:55:06,890 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:55:07,517 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:09,519 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:11,522 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:13,525 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:15,528 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:17,530 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:19,532 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:21,534 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:22,319 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:55:22,320 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:55:23,538 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:25,539 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:27,544 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:29,546 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:31,549 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:33,554 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:35,555 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:37,557 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:37,809 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:55:37,810 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:55:39,558 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:41,560 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:43,562 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:45,563 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:47,565 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:49,568 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:51,571 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:53,187 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:55:53,188 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:55:53,573 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:55,575 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:57,576 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:55:59,579 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:01,581 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:03,582 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:05,584 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:07,586 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:08,792 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:56:08,793 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:56:09,588 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:11,590 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:13,593 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:15,594 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:17,596 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:19,600 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:21,602 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:23,604 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:24,208 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:56:24,208 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:56:25,606 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:27,608 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:29,611 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:31,613 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:33,614 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:35,616 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:37,617 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:39,620 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:39,690 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:56:39,690 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:56:41,622 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:43,623 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:45,625 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:47,626 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:49,628 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:51,632 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:53,634 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:55,261 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:56:55,261 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:56:55,636 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:57,638 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:56:59,641 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:01,643 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:05,645 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:07,648 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:09,651 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:10,722 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:57:10,723 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:57:11,654 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:13,657 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:15,659 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:17,662 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:19,665 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:21,668 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:23,672 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:25,675 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:26,279 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:57:26,279 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:57:27,678 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:29,681 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:31,683 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:33,685 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:35,689 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:37,693 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:39,695 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:41,696 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:41,863 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:57:41,863 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:57:43,698 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:45,701 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:47,704 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:49,706 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:51,709 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:53,712 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:55,719 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:57,410 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:57:57,410 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:57:57,721 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:57:59,724 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:01,725 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:03,728 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:05,730 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:07,730 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:09,733 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:11,736 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:12,916 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:58:12,917 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:58:13,737 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:15,739 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:16,922 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:58:16,923 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:58:16,953 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:58:16,953 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:58:16,965 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:58:16,965 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:58:19,740 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:28,364 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:58:28,364 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:58:34,415 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:58:34,415 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:58:34,455 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:58:34,456 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:58:43,793 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:58:43,794 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:58:47,533 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:58:47,533 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:58:47,535 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:58:47,535 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:58:49,750 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:50,776 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:58:50,776 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:58:50,852 DEBUG   SenderThread:80458 [sender.py:send():303] send: telemetry
+2022-11-05 20:58:50,857 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:58:50,857 INFO    HandlerThread:80458 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:58:51,750 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/config.yaml
+2022-11-05 20:58:54,092 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:58:54,092 INFO    HandlerThread:80458 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:58:54,092 DEBUG   SenderThread:80458 [sender.py:send():303] send: telemetry
+2022-11-05 20:58:54,093 DEBUG   SenderThread:80458 [sender.py:send():303] send: exit
+2022-11-05 20:58:54,093 INFO    SenderThread:80458 [sender.py:send_exit():442] handling exit code: 0
+2022-11-05 20:58:54,093 INFO    SenderThread:80458 [sender.py:send_exit():444] handling runtime: 533
+2022-11-05 20:58:54,094 INFO    SenderThread:80458 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 20:58:54,094 INFO    SenderThread:80458 [sender.py:send_exit():450] send defer
+2022-11-05 20:58:54,094 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:54,094 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 0
+2022-11-05 20:58:54,094 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:54,094 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-11-05 20:58:54,094 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 1
+2022-11-05 20:58:54,094 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:54,094 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 1
+2022-11-05 20:58:54,094 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:54,094 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-11-05 20:58:54,094 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 2
+2022-11-05 20:58:54,095 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:54,095 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 2
+2022-11-05 20:58:54,095 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:54,095 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-11-05 20:58:54,095 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 3
+2022-11-05 20:58:54,095 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:54,095 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 3
+2022-11-05 20:58:54,095 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:54,095 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-11-05 20:58:54,095 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 4
+2022-11-05 20:58:54,095 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:54,095 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 4
+2022-11-05 20:58:54,095 DEBUG   SenderThread:80458 [sender.py:send():303] send: summary
+2022-11-05 20:58:54,101 INFO    SenderThread:80458 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 20:58:54,101 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:54,101 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-11-05 20:58:54,101 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 5
+2022-11-05 20:58:54,101 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:54,102 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 5
+2022-11-05 20:58:54,102 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:54,102 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-11-05 20:58:54,563 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 6
+2022-11-05 20:58:54,564 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:54,564 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 6
+2022-11-05 20:58:54,564 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:54,564 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-11-05 20:58:54,751 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/config.yaml
+2022-11-05 20:58:54,752 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/wandb-summary.json
+2022-11-05 20:58:55,095 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-05 20:58:55,560 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 7
+2022-11-05 20:58:55,561 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: poll_exit
+2022-11-05 20:58:55,561 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:55,561 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 7
+2022-11-05 20:58:55,562 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:55,562 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-11-05 20:58:55,562 INFO    SenderThread:80458 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-11-05 20:58:55,752 INFO    Thread-13 :80458 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:55,752 INFO    SenderThread:80458 [dir_watcher.py:finish():392] scan: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files
+2022-11-05 20:58:55,753 INFO    SenderThread:80458 [dir_watcher.py:finish():406] scan save: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/config.yaml config.yaml
+2022-11-05 20:58:55,753 INFO    SenderThread:80458 [dir_watcher.py:finish():406] scan save: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log output.log
+2022-11-05 20:58:55,757 INFO    SenderThread:80458 [dir_watcher.py:finish():406] scan save: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/requirements.txt requirements.txt
+2022-11-05 20:58:55,758 INFO    SenderThread:80458 [dir_watcher.py:finish():406] scan save: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/wandb-summary.json wandb-summary.json
+2022-11-05 20:58:55,760 INFO    SenderThread:80458 [dir_watcher.py:finish():406] scan save: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/conda-environment.yaml conda-environment.yaml
+2022-11-05 20:58:55,764 INFO    SenderThread:80458 [dir_watcher.py:finish():406] scan save: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/wandb-metadata.json wandb-metadata.json
+2022-11-05 20:58:55,764 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 8
+2022-11-05 20:58:55,769 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:55,771 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 8
+2022-11-05 20:58:55,771 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:55,771 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-11-05 20:58:55,771 INFO    SenderThread:80458 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-05 20:58:56,095 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-05 20:58:56,096 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: poll_exit
+2022-11-05 20:58:56,900 INFO    Thread-20 :80458 [upload_job.py:push():143] Uploaded file /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/wandb-summary.json
+2022-11-05 20:58:56,910 INFO    Thread-18 :80458 [upload_job.py:push():143] Uploaded file /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/output.log
+2022-11-05 20:58:56,918 INFO    Thread-21 :80458 [upload_job.py:push():143] Uploaded file /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/conda-environment.yaml
+2022-11-05 20:58:56,918 INFO    Thread-17 :80458 [upload_job.py:push():143] Uploaded file /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/config.yaml
+2022-11-05 20:58:56,927 INFO    Thread-19 :80458 [upload_job.py:push():143] Uploaded file /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/files/requirements.txt
+2022-11-05 20:58:57,096 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-05 20:58:57,097 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: poll_exit
+2022-11-05 20:58:57,127 INFO    Thread-12 :80458 [sender.py:transition_state():463] send defer: 9
+2022-11-05 20:58:57,128 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:57,128 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 9
+2022-11-05 20:58:57,128 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:57,128 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-11-05 20:58:57,128 INFO    SenderThread:80458 [file_pusher.py:join():173] waiting for file pusher
+2022-11-05 20:58:57,129 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 10
+2022-11-05 20:58:57,129 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:57,129 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 10
+2022-11-05 20:58:57,129 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:57,129 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-11-05 20:58:58,087 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 11
+2022-11-05 20:58:58,087 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:58,087 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 11
+2022-11-05 20:58:58,088 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:58,088 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-11-05 20:58:58,088 INFO    SenderThread:80458 [sender.py:transition_state():463] send defer: 12
+2022-11-05 20:58:58,088 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: defer
+2022-11-05 20:58:58,088 DEBUG   SenderThread:80458 [sender.py:send():303] send: final
+2022-11-05 20:58:58,088 INFO    HandlerThread:80458 [handler.py:handle_request_defer():162] handle defer: 12
+2022-11-05 20:58:58,088 DEBUG   SenderThread:80458 [sender.py:send():303] send: footer
+2022-11-05 20:58:58,088 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: defer
+2022-11-05 20:58:58,088 INFO    SenderThread:80458 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-11-05 20:58:58,089 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-05 20:58:58,089 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: poll_exit
+2022-11-05 20:58:58,090 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: server_info
+2022-11-05 20:58:58,090 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: get_summary
+2022-11-05 20:58:58,090 DEBUG   SenderThread:80458 [sender.py:send_request():317] send_request: server_info
+2022-11-05 20:58:58,090 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: sampled_history
+2022-11-05 20:58:58,815 DEBUG   HandlerThread:80458 [handler.py:handle_request():139] handle_request: shutdown
+2022-11-05 20:58:58,815 INFO    HandlerThread:80458 [handler.py:finish():814] shutting down handler
+2022-11-05 20:58:59,088 INFO    WriterThread:80458 [datastore.py:close():279] close: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_204917-218vf6e1/run-218vf6e1.wandb
+2022-11-05 20:58:59,814 INFO    SenderThread:80458 [sender.py:finish():1331] shutting down sender
+2022-11-05 20:58:59,814 INFO    SenderThread:80458 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-05 20:58:59,814 INFO    SenderThread:80458 [file_pusher.py:join():173] waiting for file pusher

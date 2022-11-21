@@ -1,0 +1,96 @@
+{
+    "os": "Linux-6.0.3-76060003-generic-x86_64-with-debian-bookworm-sid",
+    "python": "3.7.13",
+    "heartbeatAt": "2022-11-05T15:00:00.286329",
+    "startedAt": "2022-11-05T14:59:59.153609",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/MadKauSing/GuessFlat.git",
+        "commit": "a364c7cb3439ea260e9d9dd779f4a7e8f825131f"
+    },
+    "email": "theayushsingh72@gmail.com",
+    "root": "/home/ayushsingh/Documents/GuessFlat",
+    "host": "CoderCatA5Pop",
+    "username": "ayushsingh",
+    "executable": "/home/ayushsingh/anaconda3/envs/ai_ml_nn/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3013.7592499999996,
+        "min": 400.0,
+        "max": 4289.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3068.837,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3068.622,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3068.699,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3068.279,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 2871.549,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 2605.166,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3069.194,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3068.633,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3069.153,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3069.185,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3068.942,
+            "min": 400.0,
+            "max": 4289.0
+        },
+        {
+            "current": 3068.852,
+            "min": 400.0,
+            "max": 4289.0
+        }
+    ],
+    "disk": {
+        "total": 460.01971435546875,
+        "used": 298.9729766845703
+    },
+    "memory": {
+        "total": 14.465187072753906
+    }
+}

@@ -1,0 +1,49 @@
+
+2.8.0
+Found 30000 files belonging to 10 classes.
+Using 24000 files for training.
+Found 30000 files belonging to 10 classes.
+Using 6000 files for validation.
+['bhojpuri_pop', 'carnatic', 'classic_bollywood', 'desi_pop', 'ghazal', 'hindustani_classical', 'indian_indie', 'punjabi_hip_hop', 'sufi', 'tamil_pop']
+(64, 75, 150, 3)
+(64,)
+0.0 1.0
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling_3 (Rescaling)     (None, 75, 150, 3)        0
+ conv2d_3 (Conv2D)           (None, 75, 150, 16)       448
+ max_pooling2d_3 (MaxPooling  (None, 37, 75, 16)       0
+ 2D)
+ conv2d_4 (Conv2D)           (None, 37, 75, 32)        4640
+ max_pooling2d_4 (MaxPooling  (None, 18, 37, 32)       0
+ 2D)
+ conv2d_5 (Conv2D)           (None, 18, 37, 64)        18496
+ max_pooling2d_5 (MaxPooling  (None, 9, 18, 64)        0
+ 2D)
+ flatten_1 (Flatten)         (None, 10368)             0
+ dense_2 (Dense)             (None, 128)               1327232
+ dense_3 (Dense)             (None, 10)                1290
+=================================================================
+Total params: 1,352,106
+Trainable params: 1,352,106
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

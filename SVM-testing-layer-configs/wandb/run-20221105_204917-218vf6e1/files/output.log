@@ -1,0 +1,286 @@
+Found 30000 files belonging to 10 classes.
+Using 24000 files for training.
+2022-11-05 20:49:46.334687: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2022-11-05 20:49:46.334737: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-11-05 20:49:46.334767: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (CoderCatA5Pop): /proc/driver/nvidia/version does not exist
+2022-11-05 20:49:46.335373: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Found 30000 files belonging to 10 classes.
+Using 6000 files for validation.
+['bhojpuri_pop', 'carnatic', 'classic_bollywood', 'desi_pop', 'ghazal', 'hindustani_classical', 'indian_indie', 'punjabi_hip_hop', 'sufi', 'tamil_pop']
+(64, 75, 150, 3)
+(64,)
+0.0 1.0
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling_1 (Rescaling)     (None, 75, 150, 3)        0
+ conv2d (Conv2D)             (None, 75, 150, 16)       448
+ max_pooling2d (MaxPooling2D  (None, 37, 75, 16)       0
+ )
+ conv2d_1 (Conv2D)           (None, 37, 75, 32)        4640
+ max_pooling2d_1 (MaxPooling  (None, 18, 37, 32)       0
+ 2D)
+ conv2d_2 (Conv2D)           (None, 18, 37, 64)        18496
+ max_pooling2d_2 (MaxPooling  (None, 9, 18, 64)        0
+ 2D)
+ flatten (Flatten)           (None, 10368)             0
+ dense (Dense)               (None, 128)               1327232
+ dense_1 (Dense)             (None, 10)                1290
+=================================================================
+Total params: 1,352,106
+Trainable params: 1,352,106
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - ETA: 0s - loss: 1.8316 - accuracy: 0.3614Epoch 1/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 92s 247ms/step - loss: 1.3052 - accuracy: 0.5479 - val_loss: 1.1893 - val_accuracy: 0.5852
+Epoch 2/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 85s 226ms/step - loss: 1.1341 - accuracy: 0.6120 - val_loss: 1.0939 - val_accuracy: 0.6180
+Epoch 3/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 75s 199ms/step - loss: 1.0301 - accuracy: 0.6471 - val_loss: 1.0562 - val_accuracy: 0.6302
+Epoch 4/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 75s 199ms/step - loss: 0.9409 - accuracy: 0.6793 - val_loss: 1.0914 - val_accuracy: 0.6168
+Epoch 5/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+375/375 [==============================] - 74s 198ms/step - loss: 0.8623 - accuracy: 0.7080 - val_loss: 1.0205 - val_accuracy: 0.6498
+<module 'tensorboard.summary._tf.summary' from '/home/ayushsingh/anaconda3/envs/ai_ml_nn/lib/python3.7/site-packages/tensorboard/summary/_tf/summary/__init__.py'>

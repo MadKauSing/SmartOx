@@ -1,0 +1,10 @@
+librosa
+glob
+tensorflow
+streamlit
+audio_recorder_streamlit
+numpy
+pandas
+matplotlib
+spleeter
+pydub

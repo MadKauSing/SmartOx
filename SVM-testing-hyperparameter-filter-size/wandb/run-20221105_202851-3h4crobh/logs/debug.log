@@ -1,0 +1,32 @@
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_setup.py:_flush():68] Configure stats pid to 60482
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_setup.py:_flush():68] Loading settings from /home/ayushsingh/.config/wandb/settings
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_setup.py:_flush():68] Loading settings from /home/ayushsingh/Documents/GuessFlat/wandb/settings
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_init.py:_log_setup():476] Logging user logs to /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202851-3h4crobh/logs/debug.log
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_init.py:_log_setup():477] Logging internal logs to /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202851-3h4crobh/logs/debug-internal.log
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f71a9290a50>
+2022-11-05 20:28:51,756 INFO    MainThread:60482 [wandb_init.py:init():516] calling init triggers
+2022-11-05 20:28:51,757 INFO    MainThread:60482 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {}
+2022-11-05 20:28:51,757 INFO    MainThread:60482 [wandb_init.py:init():569] starting backend
+2022-11-05 20:28:51,757 INFO    MainThread:60482 [wandb_init.py:init():573] setting up manager
+2022-11-05 20:28:51,758 INFO    MainThread:60482 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-11-05 20:28:51,760 INFO    MainThread:60482 [wandb_init.py:init():580] backend started and connected
+2022-11-05 20:28:51,761 INFO    MainThread:60482 [wandb_run.py:_label_probe_notebook():1113] probe notebook
+2022-11-05 20:28:51,761 INFO    MainThread:60482 [wandb_run.py:_label_probe_notebook():1123] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-11-05 20:28:51,761 INFO    MainThread:60482 [wandb_init.py:init():658] updated telemetry
+2022-11-05 20:28:51,786 INFO    MainThread:60482 [wandb_init.py:init():694] communicating run to backend with 60 second timeout
+2022-11-05 20:28:52,622 INFO    MainThread:60482 [wandb_run.py:_on_init():2000] communicating current version
+2022-11-05 20:28:52,937 INFO    MainThread:60482 [wandb_run.py:_on_init():2004] got version response 
+2022-11-05 20:28:52,937 INFO    MainThread:60482 [wandb_init.py:init():728] starting run threads in backend
+2022-11-05 20:28:57,959 INFO    MainThread:60482 [wandb_run.py:_console_start():1980] atexit reg
+2022-11-05 20:28:57,959 INFO    MainThread:60482 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2022-11-05 20:28:57,959 INFO    MainThread:60482 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2022-11-05 20:28:57,959 INFO    MainThread:60482 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-11-05 20:28:57,960 INFO    MainThread:60482 [wandb_init.py:init():765] run started, returning control to user process
+2022-11-05 20:28:57,963 INFO    MainThread:60482 [wandb_init.py:_pause_backend():389] pausing backend
+2022-11-05 20:28:57,963 INFO    MainThread:60482 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-05 20:28:57,996 INFO    MainThread:60482 [wandb_init.py:_resume_backend():398] resuming backend
+2022-11-05 20:29:01,695 INFO    MainThread:60482 [wandb_init.py:_pause_backend():389] pausing backend
+2022-11-05 20:29:01,695 INFO    MainThread:60482 [jupyter.py:save_ipynb():378] not saving jupyter notebook

@@ -1,0 +1,35 @@
+2022-11-05 20:29:32,429 INFO    StreamThr :67620 [internal.py:wandb_internal():91] W&B internal server running at pid: 67620, started at: 2022-11-05 20:29:32.429395
+2022-11-05 20:29:32,431 DEBUG   HandlerThread:67620 [handler.py:handle_request():139] handle_request: status
+2022-11-05 20:29:32,432 DEBUG   SenderThread:67620 [sender.py:send_request():317] send_request: status
+2022-11-05 20:29:32,433 DEBUG   SenderThread:67620 [sender.py:send():303] send: header
+2022-11-05 20:29:32,433 INFO    WriterThread:67620 [datastore.py:open_for_write():75] open: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202932-2ql2uvsl/run-2ql2uvsl.wandb
+2022-11-05 20:29:32,446 DEBUG   SenderThread:67620 [sender.py:send():303] send: run
+2022-11-05 20:29:33,258 DEBUG   HandlerThread:67620 [handler.py:handle_request():139] handle_request: check_version
+2022-11-05 20:29:33,263 INFO    SenderThread:67620 [dir_watcher.py:__init__():216] watching files in: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202932-2ql2uvsl/files
+2022-11-05 20:29:33,263 INFO    SenderThread:67620 [sender.py:_start_run_threads():931] run started: 2ql2uvsl with start time 1667660372.427457
+2022-11-05 20:29:33,263 DEBUG   SenderThread:67620 [sender.py:send():303] send: summary
+2022-11-05 20:29:33,263 INFO    SenderThread:67620 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 20:29:33,263 DEBUG   SenderThread:67620 [sender.py:send_request():317] send_request: check_version
+2022-11-05 20:29:33,629 DEBUG   HandlerThread:67620 [handler.py:handle_request():139] handle_request: run_start
+2022-11-05 20:29:33,631 DEBUG   HandlerThread:67620 [system_info.py:__init__():31] System info init
+2022-11-05 20:29:33,631 DEBUG   HandlerThread:67620 [system_info.py:__init__():46] System info init done
+2022-11-05 20:29:33,631 INFO    HandlerThread:67620 [system_monitor.py:start():150] Starting system monitor
+2022-11-05 20:29:33,631 INFO    SystemMonitor:67620 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-05 20:29:33,631 INFO    HandlerThread:67620 [system_monitor.py:probe():168] Collecting system info
+2022-11-05 20:29:33,631 INFO    SystemMonitor:67620 [interfaces.py:start():168] Started cpu
+2022-11-05 20:29:33,631 INFO    SystemMonitor:67620 [interfaces.py:start():168] Started disk
+2022-11-05 20:29:33,632 INFO    SystemMonitor:67620 [interfaces.py:start():168] Started memory
+2022-11-05 20:29:33,633 INFO    SystemMonitor:67620 [interfaces.py:start():168] Started network
+2022-11-05 20:29:33,636 DEBUG   HandlerThread:67620 [system_info.py:probe():195] Probing system
+2022-11-05 20:29:33,644 DEBUG   HandlerThread:67620 [system_info.py:_probe_git():180] Probing git
+2022-11-05 20:29:33,664 DEBUG   HandlerThread:67620 [system_info.py:_probe_git():188] Probing git done
+2022-11-05 20:29:33,664 DEBUG   HandlerThread:67620 [system_info.py:probe():241] Probing system done
+2022-11-05 20:29:33,664 DEBUG   HandlerThread:67620 [system_monitor.py:probe():177] {'os': 'Linux-6.0.3-76060003-generic-x86_64-with-debian-bookworm-sid', 'python': '3.7.13', 'heartbeatAt': '2022-11-05T14:59:33.636710', 'startedAt': '2022-11-05T14:59:32.421601', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/MadKauSing/GuessFlat.git', 'commit': 'a364c7cb3439ea260e9d9dd779f4a7e8f825131f'}, 'email': 'theayushsingh72@gmail.com', 'root': '/home/ayushsingh/Documents/GuessFlat', 'host': 'CoderCatA5Pop', 'username': 'ayushsingh', 'executable': '/home/ayushsingh/anaconda3/envs/ai_ml_nn/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2837.447166666667, 'min': 400.0, 'max': 4289.0}, 'cpu_freq_per_core': [{'current': 3231.029, 'min': 400.0, 'max': 4289.0}, {'current': 3243.122, 'min': 400.0, 'max': 4289.0}, {'current': 2992.661, 'min': 400.0, 'max': 4289.0}, {'current': 2907.112, 'min': 400.0, 'max': 4289.0}, {'current': 2586.533, 'min': 400.0, 'max': 4289.0}, {'current': 2586.419, 'min': 400.0, 'max': 4289.0}, {'current': 2989.855, 'min': 400.0, 'max': 4289.0}, {'current': 2911.237, 'min': 400.0, 'max': 4289.0}, {'current': 3232.442, 'min': 400.0, 'max': 4289.0}, {'current': 3232.649, 'min': 400.0, 'max': 4289.0}, {'current': 3233.195, 'min': 400.0, 'max': 4289.0}, {'current': 3241.698, 'min': 400.0, 'max': 4289.0}], 'disk': {'total': 460.01971435546875, 'used': 298.9607925415039}, 'memory': {'total': 14.465187072753906}}
+2022-11-05 20:29:33,664 INFO    HandlerThread:67620 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-05 20:29:33,664 INFO    HandlerThread:67620 [system_monitor.py:probe():181] Publishing system info
+2022-11-05 20:29:33,664 DEBUG   HandlerThread:67620 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-05 20:29:33,665 DEBUG   HandlerThread:67620 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-05 20:29:33,665 DEBUG   HandlerThread:67620 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2022-11-05 20:29:34,265 INFO    Thread-13 :67620 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202932-2ql2uvsl/files/conda-environment.yaml
+2022-11-05 20:29:34,265 INFO    Thread-13 :67620 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202932-2ql2uvsl/files/requirements.txt
+2022-11-05 20:29:34,266 INFO    Thread-13 :67620 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202932-2ql2uvsl/files/wandb-summary.json

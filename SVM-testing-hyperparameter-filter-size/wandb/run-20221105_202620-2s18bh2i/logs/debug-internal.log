@@ -1,0 +1,159 @@
+2022-11-05 20:26:20,843 INFO    StreamThr :57064 [internal.py:wandb_internal():91] W&B internal server running at pid: 57064, started at: 2022-11-05 20:26:20.843237
+2022-11-05 20:26:20,844 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: status
+2022-11-05 20:26:20,845 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: status
+2022-11-05 20:26:20,846 DEBUG   SenderThread:57064 [sender.py:send():303] send: header
+2022-11-05 20:26:20,846 INFO    WriterThread:57064 [datastore.py:open_for_write():75] open: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/run-2s18bh2i.wandb
+2022-11-05 20:26:21,416 DEBUG   SenderThread:57064 [sender.py:send():303] send: run
+2022-11-05 20:26:22,227 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: check_version
+2022-11-05 20:26:22,240 INFO    SenderThread:57064 [dir_watcher.py:__init__():216] watching files in: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files
+2022-11-05 20:26:22,240 INFO    SenderThread:57064 [sender.py:_start_run_threads():931] run started: 2s18bh2i with start time 1667660180.841215
+2022-11-05 20:26:22,240 DEBUG   SenderThread:57064 [sender.py:send():303] send: summary
+2022-11-05 20:26:22,240 INFO    SenderThread:57064 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 20:26:22,241 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: check_version
+2022-11-05 20:26:22,794 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: run_start
+2022-11-05 20:26:22,796 DEBUG   HandlerThread:57064 [system_info.py:__init__():31] System info init
+2022-11-05 20:26:22,796 DEBUG   HandlerThread:57064 [system_info.py:__init__():46] System info init done
+2022-11-05 20:26:22,797 INFO    HandlerThread:57064 [system_monitor.py:start():150] Starting system monitor
+2022-11-05 20:26:22,797 INFO    SystemMonitor:57064 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-05 20:26:22,797 INFO    HandlerThread:57064 [system_monitor.py:probe():168] Collecting system info
+2022-11-05 20:26:22,797 INFO    SystemMonitor:57064 [interfaces.py:start():168] Started cpu
+2022-11-05 20:26:22,797 INFO    SystemMonitor:57064 [interfaces.py:start():168] Started disk
+2022-11-05 20:26:22,798 INFO    SystemMonitor:57064 [interfaces.py:start():168] Started memory
+2022-11-05 20:26:22,798 INFO    SystemMonitor:57064 [interfaces.py:start():168] Started network
+2022-11-05 20:26:22,803 DEBUG   HandlerThread:57064 [system_info.py:probe():195] Probing system
+2022-11-05 20:26:22,811 DEBUG   HandlerThread:57064 [system_info.py:_probe_git():180] Probing git
+2022-11-05 20:26:22,838 DEBUG   HandlerThread:57064 [system_info.py:_probe_git():188] Probing git done
+2022-11-05 20:26:22,838 DEBUG   HandlerThread:57064 [system_info.py:probe():241] Probing system done
+2022-11-05 20:26:22,838 DEBUG   HandlerThread:57064 [system_monitor.py:probe():177] {'os': 'Linux-6.0.3-76060003-generic-x86_64-with-debian-bookworm-sid', 'python': '3.7.13', 'heartbeatAt': '2022-11-05T14:56:22.803463', 'startedAt': '2022-11-05T14:56:20.827872', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/MadKauSing/GuessFlat.git', 'commit': 'a364c7cb3439ea260e9d9dd779f4a7e8f825131f'}, 'email': 'theayushsingh72@gmail.com', 'root': '/home/ayushsingh/Documents/GuessFlat', 'host': 'CoderCatA5Pop', 'username': 'ayushsingh', 'executable': '/home/ayushsingh/anaconda3/envs/ai_ml_nn/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3599.064083333333, 'min': 400.0, 'max': 4289.0}, 'cpu_freq_per_core': [{'current': 3599.104, 'min': 400.0, 'max': 4289.0}, {'current': 3604.337, 'min': 400.0, 'max': 4289.0}, {'current': 3597.632, 'min': 400.0, 'max': 4289.0}, {'current': 3598.334, 'min': 400.0, 'max': 4289.0}, {'current': 3599.11, 'min': 400.0, 'max': 4289.0}, {'current': 3595.471, 'min': 400.0, 'max': 4289.0}, {'current': 3602.944, 'min': 400.0, 'max': 4289.0}, {'current': 3599.135, 'min': 400.0, 'max': 4289.0}, {'current': 3596.108, 'min': 400.0, 'max': 4289.0}, {'current': 3599.136, 'min': 400.0, 'max': 4289.0}, {'current': 3599.134, 'min': 400.0, 'max': 4289.0}, {'current': 3598.324, 'min': 400.0, 'max': 4289.0}], 'disk': {'total': 460.01971435546875, 'used': 298.9394645690918}, 'memory': {'total': 14.465187072753906}}
+2022-11-05 20:26:22,838 INFO    HandlerThread:57064 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-05 20:26:22,838 INFO    HandlerThread:57064 [system_monitor.py:probe():181] Publishing system info
+2022-11-05 20:26:22,838 DEBUG   HandlerThread:57064 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-05 20:26:22,839 DEBUG   HandlerThread:57064 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-05 20:26:22,839 DEBUG   HandlerThread:57064 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2022-11-05 20:26:23,242 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/wandb-summary.json
+2022-11-05 20:26:23,243 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/requirements.txt
+2022-11-05 20:26:23,243 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/conda-environment.yaml
+2022-11-05 20:26:30,090 DEBUG   HandlerThread:57064 [system_info.py:_save_conda():86] Saving conda packages done
+2022-11-05 20:26:30,091 INFO    HandlerThread:57064 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-05 20:26:30,141 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:26:30,142 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:30,142 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:26:30,142 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:30,149 INFO    HandlerThread:57064 [system_monitor.py:finish():160] Stopping system monitor
+2022-11-05 20:26:30,150 DEBUG   SystemMonitor:57064 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-05 20:26:30,150 DEBUG   SystemMonitor:57064 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-11-05 20:26:30,150 DEBUG   SystemMonitor:57064 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-11-05 20:26:30,151 INFO    HandlerThread:57064 [interfaces.py:finish():173] Joined cpu
+2022-11-05 20:26:30,152 INFO    HandlerThread:57064 [interfaces.py:finish():173] Joined disk
+2022-11-05 20:26:30,152 INFO    HandlerThread:57064 [interfaces.py:finish():173] Joined memory
+2022-11-05 20:26:30,152 INFO    HandlerThread:57064 [interfaces.py:finish():173] Joined network
+2022-11-05 20:26:30,152 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:30,153 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:30,153 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:30,153 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:30,153 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:30,153 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:30,153 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:30,153 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:30,153 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:30,153 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:30,156 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:30,156 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:30,156 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:30,156 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:30,156 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:30,156 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:30,156 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:30,156 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:30,244 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/conda-environment.yaml
+2022-11-05 20:26:30,245 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/wandb-metadata.json
+2022-11-05 20:26:30,597 DEBUG   SenderThread:57064 [sender.py:send():303] send: telemetry
+2022-11-05 20:26:30,599 DEBUG   SenderThread:57064 [sender.py:send():303] send: files
+2022-11-05 20:26:30,599 INFO    SenderThread:57064 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-05 20:26:30,599 DEBUG   SenderThread:57064 [sender.py:send():303] send: stats
+2022-11-05 20:26:31,245 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_created():275] file/dir created: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:26:31,671 INFO    Thread-16 :57064 [upload_job.py:push():143] Uploaded file /tmp/tmpx1d8kj6wwandb/hrio56tf-wandb-metadata.json
+2022-11-05 20:26:33,245 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:26:45,599 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:26:45,601 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:26:49,933 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:49,933 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:50,027 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:50,027 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:50,030 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:50,030 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:50,060 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:50,060 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:50,061 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:50,061 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:50,090 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:50,090 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:51,001 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:51,001 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:51,047 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:51,047 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:51,727 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:51,727 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:51,747 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:51,747 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:52,251 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/config.yaml
+2022-11-05 20:26:52,540 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:52,540 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:52,567 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:52,567 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:52,877 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:52,878 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:52,896 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:52,896 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:53,251 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:26:53,292 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:53,292 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:53,312 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:53,312 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:53,314 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:53,314 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:53,342 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:53,342 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:53,394 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:53,395 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:53,444 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:53,444 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:53,449 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:53,449 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:53,467 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:53,467 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:53,482 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:53,482 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:53,538 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:26:53,538 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:26:53,987 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: pause
+2022-11-05 20:26:53,987 INFO    HandlerThread:57064 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-05 20:26:55,252 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:00,922 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:27:00,922 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:27:16,302 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:27:16,303 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:27:31,632 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:27:31,633 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:27:36,976 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: resume
+2022-11-05 20:27:36,976 INFO    HandlerThread:57064 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-05 20:27:39,269 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:41,272 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:43,275 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:45,277 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:46,983 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:27:46,983 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:27:47,279 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:49,282 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:51,284 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:53,287 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:55,290 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:57,294 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:27:59,298 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:28:01,300 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:28:02,404 DEBUG   HandlerThread:57064 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-05 20:28:02,405 DEBUG   SenderThread:57064 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 20:28:03,302 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:28:05,306 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:28:07,307 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
+2022-11-05 20:28:09,309 INFO    Thread-13 :57064 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/ayushsingh/Documents/GuessFlat/wandb/run-20221105_202620-2s18bh2i/files/output.log
