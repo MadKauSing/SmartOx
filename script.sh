@@ -8,5 +8,5 @@ for branch in $branches;do
 	fi
 	git checkout $x
 	mkdir ~/code_stuff/TempOx/$x
-	cp -r ~/code_stuff/SmartOx ~/code_stuff/TempOx/$x
+	rsync -av --exclude=".*" ~/code_stuff/SmartOx ~/code_stuff/TempOx/$x
 done
